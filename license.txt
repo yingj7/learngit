@@ -1,0 +1,15 @@
+
+Welcome to Online Text Editor (formerly EditPad.org) - your online plain text editor. Enter or paste your text here. To download and save it, click on the button below.用户            米家APP          插件接口层       设备插件
+  |                |                |               |
+  |--添加设备请求--> |                |               |
+  |                |--初始化插件----> |               |
+  |                |                |--连接设备----> |
+  |                |<--设备ID返回--- |               |
+  |<--设备添加成功-- |                |               |
+  |                |                |               |
+  |--控制指令------> |                |               |
+  |                |--发送指令------> |               |
+  |                |                |--执行命令----> |
+  |                |<--执行结果------|               |
+  |<--指令执行成功-- |                |               |
+
