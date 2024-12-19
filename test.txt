@@ -1,0 +1,859 @@
+[10:52:09.706]收←◆I (6597) wifi:state: init -> auth (b0)
+[0;32m08:00:05.740 [I] miio_monitor: work time = 5s, memory left = 75912[0m
+I (6617) wifi:state: auth -> assoc (0)
+
+[10:52:09.785]收←◆I (6677) wifi:state: assoc -> run (10)
+I (6687) wifi:connected with CYY, aid = 9, channel 9, BW20, bssid = 8c:53:c3:d9:63:2b
+I (6687) wifi:security: WPA2-PSK, phy: bgn, rssi: -36
+I (6687) wifi:pm start, type: 2
+
+I (6687) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32m08:00:05.820 [I] miio_net: Wifi event[4][0m [0;32m08:00:05.820 [I] miio_net: connected to ssid: CYY, bssid: 8c:53:c3:d9:63:2b, channel: 9, authmode: 4[0m
+[0;32m08:00:05.840 [I] miio_net: Wifi station connected[0m
+
+[10:52:10.831]收←◆[0;32m08:00:06.840 [I] miio_monitor: work time = 6s, memory left = 75304[0m
+[0;32m08:00:06.860 [I] app_logic_storage_handle():sysData changed,is going to storage it to flash
+[0m
+[0;32m08:00:06.860 [I] cur msp is 1,ssp is 4,cur work sta is 0
+[0m
+[0;32m08:00:06.860 [I] wifi sta is 1,net sta is 2
+[0m
+
+[10:52:10.894]收←◆[0;32m08:00:06.910 [I] sensor_dectect_key_handle(): key 3,sta 2
+[0m
+[0;32m08:00:06.910 [I] sensor_send_sensor_msg() send driver act 10[0m
+[0;32m08:00:06.920 [I] app logic task : recv msg,type is 10
+[0m
+[0;32m08:00:06.920 [I] mode_general_act_to_opt():get act 10,cur ssp is 4,return opt 24
+[0m
+[0;32m08:00:06.920 [I] mode_general_opt_handle():start cook
+[0m
+[0;32m08:00:06.930 [I] set ssp 6
+[0m
+[0;32m08:00:06.930 [I] app_logic_storage_handle():set powerDownRecvMsp as 1
+[0m
+[0;32m08:00:06.950 [I] general_cooking_handle():start cooking,mode is 1,tarTime is 15,tarTemp is 180,capacity is 0
+[0m
+[0;32m08:00:06.950 [I] buzzer task : recv msg,opt is 1,times is 1,interval is 0
+[0m
+[0;32m08:00:06.960 [I] device_pwm_out():set 0 duty = 2457
+[0m
+[0;32m08:00:06.980 [I] disp_draw_adj_tim_val():IS going to dram num 15[0m
+
+[10:52:11.206]收←◆[0;32mI (8097) tcpip_adapter: sta ip: 192.168.31.176, mask: 255.255.255.0, gw: 192.168.31.1[0m
+[0;32m08:00:07.220 [I] miio_net: Wifi event[7][0m [0;32m08:00:07.220 [I] miio_net: Wifi station got ip[0m
+[0;32m08:00:07.230 [D] ot: event emit[id=2,txt=otn.mode,ext_len=4][0m [0;32m08:00:07.230 [D] miio_ot: otn.mode[2] happened![0m
+[0;32m08:00:07.240 [I] miio_net: miio_net_provision_stat_hook called[0m
+[0;32m08:00:07.240 [D] ots: get ctrl[type=1, arg_len=60][0m [0;32m08:00:07.250 [I] miio_net: miio_net_provision_stat_hook called[0m
+[0;32m08:00:07.260 [D] httpc: url = http://110.43.0.83/gslb?tver=2&id=70014626937&dm=ots.io.mi.com&model=careli.fryer.maf06a&timestamp=7&sign=MwTDLRwpCI0IeSBfVE5AxoxoGo457QNa1awS0XVGirE%3D[0m
+[0;32m08:00:07.270 [D] ots: set ctrl[type=1, arg_len=60][0m [0;32m08:00:07.280 [D] httpc: domain = 110.43.0.83::80[0m
+[0;32m08:00:07.280 [D] httpc: path = /gslb?tver=2&id=70014626937&dm=ots.io.mi.com&model=careli.fryer.maf06a&timestamp=7&sign=MwTDLRwpCI0IeSBfVE5AxoxoGo457QNa1awS0XVGirE%3D[0m
+[0;32m08:00:07.300 [D] otu: get ctrl[type=1, arg_len=0][0m [0;32m08:00:07.300 [D] httpc: hostname = dns.io.mi.com[0m
+[0;32m08:00:07.310 [D] otu: otu is opening...[0m
+[0;32m08:00:07.320 [D] otu: set ctrl[type=1, arg_len=0][0m [0;32m08:00:07.320 [D] httpc: connecting[0m
+[0;32m08:00:07.320 [D] ots: ots is connecting...[0m
+[0;32m08:00:07.330 [D] tcp: opening[0m
+[0;32m08:00:07.340 [I] otu: Opened.[0m
+[0;32m08:00:07.340 [D] otu: event emit[id=6,txt=otu.open_ok,ext_len=0][0m [0;32m08:00:07.350 [D] otu: otu.open_ok[6] happened![0m
+[0;32m08:00:07.380 [D] tcp: opened[0m
+[0;32m08:00:07.380 [D] httpc: 
+GET /gslb?tver=2&id=70014626937&dm=ots.io.mi.com&model=careli.fryer.maf06a&timestamp=7&sign=MwTDLRwpCI0IeSBfVE5AxoxoGo457QNa1awS0XVGirE%3D HTTP/1.1
+Host: dns.io.mi.com
+User-Agent: MIoT
+
+[0m
+[0;32m08:00:07.410 [I] miio_net: Wifi event[22][0m
+
+[10:52:11.550]收←◆[0;32m08:00:07.560 [D] httpc: 
+HTTP/1.1 200 OK
+Server: Tengine
+Date: Fri, 28 Apr 2023 02:52:07 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 215
+Connection: keep-alive
+[0m
+[0;32m08:00:07.570 [I] httpc: Content-Length 215[0m
+[0;32m08:00:07.570 [I] httpc: ==> 100%[0m
+[0;32m08:00:07.580 [I] httpc: GET Done(215bytes).[0m
+[0;32m08:00:07.580 [I] httpc: File Done(215bytes).[0m
+[0;32m08:00:07.590 [D] tcp: closed[0m
+[0;32m08:00:07.590 [D] httpdns: {"info":{"enable":1,"host_list":[{"ip":"36.156.49.100","port":443},{"ip":"39.156.81.174","port":443},{"ip":"120.92.141.203","port":443}]},"sign":"fORZFuKg65av9xZRJjGQ3f9Notwy5hpbPgD9+A06kbc=","timestamp":1682650327}[0m
+[0;33m08:00:07.610 [W] httpdns: "proto" not found! (http_in_close,245)[0m
+[0;32m08:00:07.620 [D] httpdns: proto = [0m
+[0;32m08:00:07.620 [D] httpdns: host_list[0] = 36.156.49.100::443[0m
+[0;32m08:00:07.630 [D] httpdns: host_list[1] = 39.156.81.174::443[0m
+[0;32m08:00:07.630 [D] httpdns: host_list[2] = 120.92.141.203::443[0m
+[0;32m08:00:07.640 [D] httpdns: sign_base64 = fORZFuKg65av9xZRJjGQ3f9Notwy5hpbPgD9+A06kbc=, len = 44[0m
+[0;32m08:00:07.650 [D] ots: event emit[id=4,txt=ots.resolve_ok,ext_len=100][0m
+[0;32m08:00:07.660 [D] ots: ots.resolve_ok[4] happened![0m
+[0;32m08:00:07.660 [D] httpc: idle[0m
+[0;32m08:00:07.670 [D] ots: set ctrl[type=2, arg_len=72][0m
+[0;32m08:00:07.670 [D] ots: backlist[0] = 39.156.81.174::443[0m
+[0;32m08:00:07.680 [D] ots: backlist[1] = 120.92.141.203::443[0m
+[0;32m08:00:07.680 [D] ots: login_timeout=45000[0m
+[0;32m08:00:07.690 [D] ots: get ctrl[type=2, arg_len=72][0m
+[0;32m08:00:07.690 [I] ots: ots connect 36.156.49.100::443...[0m
+[0;32m08:00:07.700 [D] tls: opening[0m
+[0;32m08:00:07.710 [D] tls: Loading the CA root certificate...[0m
+[0;32m08:00:07.710 [D] tls: Setting up the SSL/TLS structure...[0m
+[0;32m08:00:07.720 [D] tls: psk identity is DID=70014626937.[0m
+[0;32m08:00:07.720 [I] tls: connect to server Mijia Cloud, domain is 36.156.49.100, port is 443.[0m
+[0;32m08:00:07.740 [I] mible_gap: Start mible gap scan[0m
+[0;32m08:00:07.770 [D] tls: Socket Connected.[0m
+[0;32m08:00:07.770 [D] tls: TLS/SSL start handshake...[0m
+
+[10:52:11.988]收←◆[0;33m08:00:08.000 [W] tls: timeout[100]! mbedtls_ssl_handshake returned -0x6800 (d0_tls_open,396)[0m
+
+[10:52:12.081]收←◆[0;33m08:00:08.100 [W] tls: timeout[200]! mbedtls_ssl_handshake returned -0x6800 (d0_tls_open,396)[0m
+[0;32m08:00:08.110 [D] tls: handshake ok! Protocol is TLSv1.2, Ciphersuite is TLS-PSK-WITH-AES-128-CBC-SHA.[0m
+[0;32m08:00:08.110 [I] ots: Connected.[0m
+[0;32m08:00:08.110 [I] miio_net: miio_net_provision_stat_hook called[0m
+[0;32m08:00:08.120 [D] ots: event emit[id=6,txt=ots.connect_ok,ext_len=72][0m
+[0;32m08:00:08.130 [D] ots: ots.connect_ok[6] happened![0m
+[0;32m08:00:08.140 [I] ots: -->sync sent.[0m
+[0;32m08:00:08.160 [D] ots: recvd 24Bytes[0m
+[0;32m08:00:08.170 [I] ots: <--sync ack.[0m
+[0;32m08:00:08.170 [D] ots: sync costtime = 30[0m
+
+[10:52:12.222]收←◆[0;32m10:52:08.230 [I] miio_monitor: work time = 8s, memory left = 57768[0m
+
+[10:52:13.128]收←◆[0;32m10:52:09.140 [D] ots: login req = 13careli.fryer.maf06a[0m
+[0;32m10:52:09.140 [I] ots: -->login sent.[0m
+[0;32m10:52:09.140 [I] miio_net: miio_net_provision_stat_hook called[0m
+[0;32m10:52:09.170 [D] ots: recvd 9Bytes[0m
+[0;32m10:52:09.170 [I] ots: <--login ack, code=0.[0m
+[0;32m10:52:09.170 [D] ots: event emit[id=9,txt=ots.online,ext_len=0][0m
+[0;32m10:52:09.180 [D] ots: login elpased 40ms[0m
+[0;32m10:52:09.180 [D] ots: ots.online[9] happened![0m
+[0;32m10:52:09.180 [D] ots: kplv_timeout=45000, kplv_interval=16000[0m
+[0;32m10:52:09.190 [D] miio_ot: ots.online[9] happened![0m
+[0;32m10:52:09.200 [I] miio_ot: info(ots) will start in 0 ms...[0m
+[0;32m10:52:09.200 [I] miio_instance: miio_online_hook_default called[0m
+[0;32m10:52:09.210 [I] miio_net_analyse: miio_online_stats_gather [0m
+[0;32m10:52:09.220 [I] miio_net_analyse: prepare online event information ip=192.168.31.176, gw=192.168.31.1, netmask=255.255.255.0, rssi=-43[0m
+[0;32m10:52:09.230 [I] app_main: app_online_hook_default called[0m
+[0;32m10:52:09.240 [I]  app_online_handler() : enter
+[0m
+[0;32m10:52:09.240 [D] miio_ot: online_cnt = 1, offline_cnt = 0, switch_cnt = 0[0m
+[0;32m10:52:09.250 [I] miio_instance: miio_info_kvs_hook_default called[0m
+[0;32m10:52:09.260 [I] miio_monitor: work time = 9s, memory left = 57448[0m
+[0;33m10:52:09.270 [W] miio_net: get ipv6 global ip failed (miio_net_info_kvs_hook,663)[0m
+[0;32m10:52:09.270 [I] miio_ot: -->info(ots).[0m
+[0;32m10:52:09.280 [D] ots: ots_up_rpc_delegate_out_cb(), 348, {"id":2136211460,"method":"_otc.info","params":{"life":9,"model":"careli.fryer.maf06a","token":"8dfe************************18bc","ipflag":1,"fw_ver":"2.2.4_0024","miio_ver":"0.0.9","hw_ver":"esp32","mmfree":55456,"mac":"DC:ED:83:69:07:96","wifi_fw_ver":"v4.0.3-18-g70e151b696-dirty","ap":{"ssid":"CYY","bssid":"8C:53:C3:D9:63:2B","rssi":-39,"primary":9},"netif":{"localIp":"192.168.31.176","mask":"255.255.255.0","gw":"192.168.31.1"},"uid":71745406,"ipv6":true}}[0m
+[0;32m10:52:09.360 [D] ots: recvd 40Bytes[0m
+[0;32m10:52:09.360 [D] ots: req or ack recvd.[0m
+[0;32m10:52:09.360 [D] ots: {"id":2136211460,"result":"ok"}.[0m
+[0;32m10:52:09.360 [D] ots: send_cnt = 1[1], ack_cnt = 1[1,0], costtime = 80[80,80][0m
+[0;32m10:52:09.370 [D] ots: event emit[id=11,txt=ots.keeplive,ext_len=0][0m
+[0;32m10:52:09.380 [D] ots: ots.keeplive[11] happened![0m
+[0;32m10:52:09.380 [I] miio_ot: <--info ack(ots).[0m
+[0;32m10:52:09.390 [D] ots: ots_up_rpc_delegate_out_cb(), 348, {"id":104529927,"method":"_sync.set_extra_data","params":{"data":{"pubsub_tri":"enable"}}}[0m
+[0;32m10:52:09.400 [D] ots: ots_up_rpc_delegate_out_cb(), 348, {"id":248578056,"method":"_otc.ncinfo","params":{"miio_ver":"0.0.9","miio_times":[9,6,2,1],"ap":{"ssid":"CYY","connect_count":1,"repeaters":[{"bssid":"8C:53:C3:D9:63:2B","rssi":-40,"primary":9,"active":1}]},"ot_stat":[1,0,0],"ots_stat":[1,0,410,430,80,80,1,1,0,0,0,0,0]}}[0m
+[0;32m10:52:09.430 [D] ots: ots_up_rpc_delegate_out_cb(), 348, {"id":889126921,"method":"_otc.ncstat","params":{"timestamp":1682650329,"proto":2,"otip":"36.156.49.100","otport":443,"sendcnt":1,"ackcnt":1,"ackcnt_timeout":0,"costtime":80,"rpc":0,"rpcack":0,"rpcack_costtime":0,"dns":2,"keeplive_interval":16,"rpc_local":0,"rpcack_local":0}}[0m
+[0;32m10:52:09.470 [D] ots: recvd 39Bytes[0m
+[0;32m10:52:09.470 [D] ots: req or ack recvd.[0m
+[0;32m10:52:09.470 [D] ots: {"id":248578056,"result":"ok"}.[0m
+[0;32m10:52:09.470 [D] ots: send_cnt = 3[4], ack_cnt = 1[2,0], costtime = 70[79,78][0m
+[0;32m10:52:09.480 [D] ots: event emit[id=11,txt=ots.keeplive,ext_len=0][0m
+[0;32m10:52:09.490 [D] ots: ots.keeplive[11] happened![0m
+[0;32m10:52:09.500 [D] ots: recvd 39Bytes[0m
+[0;32m10:52:09.500 [D] ots: req or ack recvd.[0m
+[0;32m10:52:09.500 [D] ots: {"id":104529927,"result":"ok"}.[0m
+[0;32m10:52:09.510 [D] ots: send_cnt = 3[4], ack_cnt = 2[3,0], costtime = 190[83,83][0m
+[0;32m10:52:09.520 [D] ots: event emit[id=11,txt=ots.keeplive,ext_len=0][0m
+[0;32m10:52:09.520 [D] ots: ots.keeplive[11] happened![0m
+[0;32m10:52:09.530 [D] ots: ots_up_rpc_delegate_out_cb(), 348, {"id":1622933507,"method":"props","params":{"ble_mesh_switch":"enable"}}[0m
+[0;32m10:52:09.580 [D] ots: recvd 39Bytes[0m
+[0;32m10:52:09.580 [D] ots: req or ack recvd.[0m
+[0;32m10:52:09.580 [D] ots: {"id":889126921,"result":"ok"}.[0m
+[0;32m10:52:09.580 [D] ots: send_cnt = 4[5], ack_cnt = 3[4,0], costtime = 340[89,89][0m
+[0;32m10:52:09.590 [D] ots: event emit[id=11,txt=ots.keeplive,ext_len=0][0m
+[0;32m10:52:09.600 [D] ots: ots.keeplive[11] happened![0m
+[0;32m10:52:09.610 [D] ots: recvd 113Bytes[0m
+[0;32m10:52:09.610 [D] ots: req or ack recvd.[0m
+[0;32m10:52:09.610 [D] ots: {"from":"12","method":"miIO.dyna_params","id":1296722299,"params":{"proto":"S","keepalive_interval":20}}.[0m
+[0;32m10:52:09.620 [D] ot: miIO.dyna_params found[0m
+[0;32m10:52:09.630 [D] miio_ot: proto = S[0m
+[0;32m10:52:09.630 [D] miio_ot: keepalive_interval=20[0m
+[0;32m10:52:09.640 [D] ots: recvd 40Bytes[0m
+[0;32m10:52:09.640 [D] ots: req or ack recvd.[0m
+[0;32m10:52:09.650 [D] ots: {"id":1622933507,"result":"ok"}.[0m
+[0;32m10:52:09.650 [D] ots: send_cnt = 4[5], ack_cnt = 4[5,0], costtime = 460[92,92][0m
+[0;32m10:52:09.660 [D] ots: event emit[id=11,txt=ots.keeplive,ext_len=0][0m
+[0;32m10:52:09.670 [D] miio_ot: proto=S[0m
+[0;32m10:52:09.670 [D] ots: kplv_interval=20000[0m
+[0;32m10:52:09.680 [D] ot: ot_down_rpc_delegate_ack_handle(), 510, malloc_len: 105, pload_len: 33[0m
+[0;32m10:52:09.690 [D] ot: ot_down_rpc_delegate_finish(), 423, id: 1296722299, timestamp: 0, tick: 0, pload_len: 33[0m
+[0;32m10:52:09.700 [D] ots: ots_down_rpc_delegate_ack(), 243, ack: {"id":1296722299,"result":["ok"],"exe_time":80}, len: 47[0m
+[0;32m10:52:09.710 [D] ots: rpc_cnt = 1[1], rpcack_cnt = 1[1], costtime = 80[80,80][0m
+[0;32m10:52:09.720 [D] ots: ots.keeplive[11] happened![0m
+
+[10:52:14.190]收←◆[0;32m10:52:10.200 [I] miio_ot: -->pull ip list sent.[0m
+[0;32m10:52:10.200 [D] ots: ots_up_rpc_delegate_out_cb(), 348, {"id":975765514,"method":"_otc.pull_ip_list","params":{}}[0m
+[0;32m10:52:10.210 [D] ots: ots_up_rpc_delegate_out_cb(), 348, {"id":619970571,"method":"props","params":{"ota_progress":101,"ota_state":"idle","auto_ota_ability":1}}[0m
+[0;32m10:52:10.220 [D] ots: ots_up_rpc_delegate_out_cb(), 348, {"id":713752588,"method":"event.miio_mode","params":[2],"retry":0,"timestamp":7,"tick":7230}[0m
+[0;32m10:52:10.240 [D] ots: recvd 340Bytes[0m
+[0;32m10:52:10.240 [D] ots: req or ack recvd.[0m
+[0;32m10:52:10.240 [D] ots: {"id":975765514,"result":{"svr_list":[{"ip":"36.156.49.123","port":443},{"ip":"120.92.158.249","port":443},{"ip":"183.84.5.208","port":443}],"svr_probe_list":[{"ip":"58.254.154.6","port":8053},{"ip":"14.215.35.7","port":8053},{"ip":"110.43.63.13","port":8053},{"ip":"120.92.65.237","port":8053}],"interval":1800, "firstprobe":546}}.[0m
+[0;32m10:52:10.270 [D] ots: send_cnt = 7[8], ack_cnt = 5[6,0], costtime = 530[89,88][0m
+[0;32m10:52:10.280 [D] ots: event emit[id=11,txt=ots.keeplive,ext_len=0][0m
+[0;32m10:52:10.290 [I] miio_monitor: work time = 10s, memory left = 57008[0m
+[0;32m10:52:10.290 [D] ots: ots.keeplive[11] happened![0m
+[0;32m10:52:10.300 [D] miio_ot: otc_list[0] = 36.156.49.123::443[0m
+[0;32m10:52:10.310 [D] miio_ot: otc_list[1] = 120.92.158.249::443[0m
+[0;32m10:52:10.310 [D] miio_ot: otc_list[2] = 183.84.5.208::443[0m
+[0;32m10:52:10.320 [D] ots: backlist[0] = 36.156.49.123::443[0m
+[0;32m10:52:10.320 [D] ots: backlist[1] = 120.92.158.249::443[0m
+[0;32m10:52:10.330 [D] ots: backlist[2] = 183.84.5.208::443[0m
+[0;32m10:52:10.340 [D] miio_ot: otc_test ip[0] = 58.254.154.6::8053[0m
+[0;32m10:52:10.340 [D] miio_ot: otc_test otn->otc_test.ip_port_num=[0], max = [4][0m
+[0;32m10:52:10.350 [D] miio_ot: otc_test ip[1] = 14.215.35.7::8053[0m
+[0;32m10:52:10.360 [D] miio_ot: otc_test otn->otc_test.ip_port_num=[1], max = [4][0m
+[0;32m10:52:10.360 [D] miio_ot: otc_test ip[2] = 110.43.63.13::8053[0m
+[0;32m10:52:10.370 [D] miio_ot: otc_test otn->otc_test.ip_port_num=[2], max = [4][0m
+[0;32m10:52:10.380 [D] miio_ot: otc_test ip[3] = 120.92.65.237::8053[0m
+[0;32m10:52:10.390 [D] miio_ot: otc_test otn->otc_test.ip_port_num=[3], max = [4][0m
+[0;32m10:52:10.390 [D] miio_ot: otc_test interval=1800000ms, firsttime=546000ms[0m
+[0;32m10:52:10.400 [D] ots: recvd 39Bytes[0m
+[0;32m10:52:10.400 [D] ots: req or ack recvd.[0m
+[0;32m10:52:10.410 [D] ots: {"id":619970571,"result":"ok"}.[0m
+[0;32m10:52:10.420 [D] ots: send_cnt = 7[8], ack_cnt = 6[7,0], costtime = 740[101,102][0m
+[0;32m10:52:10.420 [D] ots: event emit[id=11,txt=ots.keeplive,ext_len=0][0m
+[0;32m10:52:10.430 [D] ots: ots.keeplive[11] happened![0m
+[0;32m10:52:10.440 [D] ots: recvd 39Bytes[0m
+[0;32m10:52:10.440 [D] ots: req or ack recvd.[0m
+[0;32m10:52:10.440 [D] ots: {"id":713752588,"result":"ok"}.[0m
+[0;32m10:52:10.450 [D] ots: send_cnt = 7[8], ack_cnt = 7[8,0], costtime = 970[113,114][0m
+[0;32m10:52:10.460 [D] ots: event emit[id=11,txt=ots.keeplive,ext_len=0][0m
+[0;32m10:52:10.470 [D] ots: ots.keeplive[11] happened![0m
+[0;32m10:52:10.470 [D] miio_info: event.miio_mode sent[0m
+
+[10:52:15.284]收←◆[0;32m10:52:11.290 [I] miio_monitor: work time = 11s, memory left = 57440[0m
+
+[10:52:15.940]收←◆[0;32m10:52:11.950 [I] app_logic_storage_handle():sysData changed,is going to storage it to flash
+[0m
+
+[10:52:16.003]收←◆[0;32m10:52:12.010 [I] cur msp is 1,ssp is 6,cur work sta is 2
+[0m
+[0;32m10:52:12.010 [I] wifi sta is 1,net sta is 4
+[0m
+[0;32m10:52:12.010 [I] current temp is 65,target temp is 180,target tim is 15,lef tim is 15,shakeTim is 7
+[0m
+
+[10:52:16.128]收←◆[0;32m10:52:12.140 [I] ots: -->sync sent.[0m
+[0;32m10:52:12.170 [D] ots: recvd 24Bytes[0m
+[0;32m10:52:12.170 [I] ots: <--sync ack.[0m
+[0;32m10:52:12.170 [D] ots: sync costtime = 30[0m
+
+[10:52:16.284]收←◆[0;32m10:52:12.290 [I] miio_monitor: work time = 12s, memory left = 57436[0m
+
+[10:52:17.268]收←◆[0;32m10:52:13.280 [D] ots: ots_up_rpc_delegate_out_cb(), 348, {"id":1798176784,"method":"properties_changed","params":[{"did":"624135017","siid":3,"piid":10,"value":1}]}[0m
+[0;32m10:52:13.290 [I] miio_monitor: work time = 13s, memory left = 54460[0m
+[0;32m10:52:13.290 [I] iot report shakeSta 1[0m
+
+[10:52:17.331]收←◆[0;32m10:52:13.340 [D] ots: recvd 40Bytes[0m
+[0;32m10:52:13.340 [D] ots: req or ack recvd.[0m
+[0;32m10:52:13.340 [D] ots: {"id":1798176784,"result":"ok"}.[0m
+[0;32m10:52:13.340 [D] ots: send_cnt = 8[9], ack_cnt = 8[9,0], costtime = 1030[107,106][0m
+[0;32m10:52:13.350 [D] ots: event emit[id=11,txt=ots.keeplive,ext_len=0][0m
+[0;32m10:52:13.360 [D] ots: ots.keeplive[11] happened![0m
+[0;31m10:52:13.360 [E] executor: _changed_ack called (_changed_ack,382)[0m
+[0;32m10:52:13.370 [D] ots: ots_up_rpc_delegate_out_cb(), 348, {"id":97320977,"method":"properties_changed","params":[{"did":"624135017","siid":2,"piid":1,"value":4}]}[0m
+[0;32m10:52:13.390 [I] iot report sta 4[0m
+
+[10:52:17.425]收←◆[0;32m10:52:13.430 [D] ots: recvd 38Bytes[0m
+[0;32m10:52:13.430 [D] ots: req or ack recvd.[0m
+[0;32m10:52:13.430 [D] ots: {"id":97320977,"result":"ok"}.[0m
+[0;32m10:52:13.430 [D] ots: send_cnt = 9[10], ack_cnt = 9[10,0], costtime = 1090[102,101][0m
+[0;32m10:52:13.440 [D] ots: event emit[id=11,txt=ots.keeplive,ext_len=0][0m
+[0;32m10:52:13.450 [D] ots: ots.keeplive[11] happened![0m
+[0;31m10:52:13.450 [E] executor: _changed_ack called (_changed_ack,382)[0m
+[0;32m10:52:13.460 [D] ots: ots_up_rpc_delegate_out_cb(), 348, {"id":1569849362,"method":"properties_changed","params":[{"did":"624135017","siid":2,"piid":2,"value":0}]}[0m
+[0;32m10:52:13.480 [I] iot report err 0[0m
+[0;32m10:52:13.510 [D] ots: recvd 40Bytes[0m
+[0;32m10:52:13.510 [D] ots: req or ack recvd.[0m
+[0;32m10:52:13.510 [D] ots: {"id":1569849362,"result":"ok"}.[0m
+[0;32m10:52:13.510 [D] ots: send_cnt = 10[11], ack_cnt = 10[11,0], costtime = 1140[96,95][0m
+[0;32m10:52:13.520 [D] ots: event emit[id=11,txt=ots.keeplive,ext_len=0][0m
+[0;32m10:52:13.530 [D] ots: ots.keeplive[11] happened![0m
+[0;31m10:52:13.530 [E] executor: _changed_ack called (_changed_ack,382)[0m
+[0;32m10:52:13.540 [D] ots: ots_up_rpc_delegate_out_cb(), 348, {"id":2003566611,"method":"properties_changed","params":[{"did":"624135017","siid":2,"piid":3,"value":15}]}[0m
+[0;32m10:52:13.560 [I] iot report targTim 15[0m
+[0;32m10:52:13.590 [D] ots: recvd 40Bytes[0m
+[0;32m10:52:13.590 [D] ots: req or ack recvd.[0m
+[0;32m10:52:13.590 [D] ots: {"id":2003566611,"result":"ok"}.[0m
+[0;32m10:52:13.600 [D] ots: send_cnt = 11[12], ack_cnt = 11[12,0], costtime = 1200[92,91][0m
+[0;32m10:52:13.610 [D] ots: event emit[id=11,txt=ots.keeplive,ext_len=0][0m
+[0;32m10:52:13.610 [D] ots: ots.keeplive[11] happened![0m
+[0;31m10:52:13.620 [E] executor: _changed_ack called (_changed_ack,382)[0m
+[0;32m10:52:13.630 [D] ots: ots_up_rpc_delegate_out_cb(), 348, {"id":1038745620,"method":"properties_changed","params":[{"did":"624135017","siid":2,"piid":4,"value":180}]}[0m
+[0;32m10:52:13.640 [I] iot report targTemp 180[0m
+
+[10:52:17.674]收←◆[0;32m10:52:13.680 [D] ots: recvd 40Bytes[0m
+[0;32m10:52:13.680 [D] ots: req or ack recvd.[0m
+[0;32m10:52:13.680 [D] ots: {"id":1038745620,"result":"ok"}.[0m
+[0;32m10:52:13.680 [D] ots: send_cnt = 12[13], ack_cnt = 12[13,0], costtime = 1250[87,86][0m
+[0;32m10:52:13.690 [D] ots: event emit[id=11,txt=ots.keeplive,ext_len=0][0m
+[0;32m10:52:13.700 [D] ots: ots.keeplive[11] happened![0m
+[0;31m10:52:13.700 [E] executor: _changed_ack called (_changed_ack,382)[0m
+[0;32m10:52:13.710 [D] ots: ots_up_rpc_delegate_out_cb(), 348, {"id":720917,"method":"properties_changed","params":[{"did":"624135017","siid":2,"piid":5,"value":15}]}[0m
+[0;32m10:52:13.730 [I] iot report leftTim_cook 15[0m
+[0;32m10:52:13.760 [D] ots: recvd 36Bytes[0m
+[0;32m10:52:13.760 [D] ots: req or ack recvd.[0m
+[0;32m10:52:13.760 [D] ots: {"id":720917,"result":"ok"}.[0m
+[0;32m10:52:13.760 [D] ots: send_cnt = 13[14], ack_cnt = 13[14,0], costtime = 1300[83,82][0m
+[0;32m10:52:13.770 [D] ots: event emit[id=11,txt=ots.keeplive,ext_len=0][0m
+[0;32m10:52:13.770 [D] ots: ots.keeplive[11] happened![0m
+[0;31m10:52:13.780 [E] executor: _changed_ack called (_changed_ack,382)[0m
+[0;32m10:52:13.790 [I] iot report recipeid = M0
+[0m
+[0;32m10:52:13.790 [D] ots: ots_up_rpc_delegate_out_cb(), 348, {"id":1709244438,"method":"properties_changed","params":[{"did":"624135017","siid":3,"piid":1,"value":"M0"}]}[0m
+[0;32m10:52:13.850 [D] ots: recvd 40Bytes[0m
+[0;32m10:52:13.850 [D] ots: req or ack recvd.[0m
+[0;32m10:52:13.850 [D] ots: {"id":1709244438,"result":"ok"}.[0m
+[0;32m10:52:13.850 [D] ots: send_cnt = 14[15], ack_cnt = 14[15,0], costtime = 1360[80,79][0m
+[0;32m10:52:13.860 [D] ots: event emit[id=11,txt=ots.keeplive,ext_len=0][0m
+[0;32m10:52:13.870 [D] ots: ots.keeplive[11] happened![0m
+[0;31m10:52:13.870 [E] executor: _changed_ack called (_changed_ack,382)[0m
+[0;32m10:52:13.880 [I] iot report recipname = u81eau9009
+[0m
+[0;32m10:52:13.890 [D] ots: ots_up_rpc_delegate_out_cb(), 348, {"id":1382613015,"method":"properties_changed","params":[{"did":"624135017","siid":3,"piid":2,"value":"u81eau9009"}]}[0m
+[0;32m10:52:13.940 [D] ots: recvd 40Bytes[0m
+[0;32m10:52:13.940 [D] ots: req or ack recvd.[0m
+[0;32m10:52:13.940 [D] ots: {"id":1382613015,"result":"ok"}.[0m
+[0;32m10:52:13.940 [D] ots: send_cnt = 15[16], ack_cnt = 15[16,0], costtime = 1410[77,76][0m
+[0;32m10:52:13.950 [D] ots: event emit[id=11,txt=ots.keeplive,ext_len=0][0m
+[0;32m10:52:13.960 [D] ots: ots.keeplive[11] happened![0m
+[0;31m10:52:13.970 [E] executor: _changed_ack called (_changed_ack,382)[0m
+[0;32m10:52:13.970 [D] ots: ots_up_rpc_delegate_out_cb(), 348, {"id":889716760,"method":"properties_changed","params":[{"did":"624135017","siid":3,"piid":5,"value":0}]}[0m
+[0;32m10:52:13.990 [I] iot report orderTim 0[0m
+
+[10:52:18.018]收←◆[0;32m10:52:14.020 [D] ots: recvd 39Bytes[0m
+[0;32m10:52:14.020 [D] ots: req or ack recvd.[0m
+[0;32m10:52:14.020 [D] ots: {"id":889716760,"result":"ok"}.[0m
+[0;32m10:52:14.030 [D] ots: send_cnt = 16[17], ack_cnt = 16[17,0], costtime = 1470[75,74][0m
+[0;32m10:52:14.040 [D] ots: event emit[id=11,txt=ots.keeplive,ext_len=0][0m
+[0;32m10:52:14.040 [D] ots: ots.keeplive[11] happened![0m
+[0;31m10:52:14.050 [E] executor: _changed_ack called (_changed_ack,382)[0m
+[0;32m10:52:14.060 [D] ots: ots_up_rpc_delegate_out_cb(), 348, {"id":1556807705,"method":"properties_changed","params":[{"did":"624135017","siid":3,"piid":6,"value":0}]}[0m
+[0;32m10:52:14.080 [I] iot report capacity 0[0m
+
+[10:52:18.112]收←◆[0;32m10:52:14.130 [D] ots: ots_up_rpc_delegate_out_cb(), 348, {"id":885587994,"method":"properties_changed","params":[{"did":"624135017","siid":3,"piid":7,"value":0}]}[0m
+[0;32m10:52:14.140 [D] ots: recvd 40Bytes[0m
+[0;32m10:52:14.140 [D] ots: req or ack recvd.[0m
+[0;32m10:52:14.140 [D] ots: {"id":1556807705,"result":"ok"}.[0m
+[0;32m10:52:14.150 [D] ots: send_cnt = 18[19], ack_cnt = 17[18,0], costtime = 1560[76,76][0m
+[0;32m10:52:14.160 [D] ots: event emit[id=11,txt=ots.keeplive,ext_len=0][0m
+[0;32m10:52:14.160 [D] ots: ots.keeplive[11] happened![0m
+[0;31m10:52:14.170 [E] executor: _changed_ack called (_changed_ack,382)[0m
+[0;32m10:52:14.170 [I] iot report preheat 0[0m
+
+[10:52:18.221]收←◆[0;32m10:52:14.230 [D] ots: ots_up_rpc_delegate_out_cb(), 348, {"id":108003356,"method":"properties_changed","params":[{"did":"624135017","siid":3,"piid":8,"value":0}]}[0m
+[0;32m10:52:14.240 [I] iot report leftTim_order 0[0m
+[0;32m10:52:14.260 [D] ots: recvd 39Bytes[0m
+[0;32m10:52:14.270 [D] ots: req or ack recvd.[0m
+[0;32m10:52:14.270 [D] ots: {"id":885587994,"result":"ok"}.[0m
+[0;32m10:52:14.270 [D] ots: send_cnt = 19[20], ack_cnt = 18[19,0], costtime = 1700[82,82][0m
+[0;32m10:52:14.280 [D] ots: event emit[id=11,txt=ots.keeplive,ext_len=0][0m
+[0;32m10:52:14.290 [I] miio_monitor: work time = 14s, memory left = 57216[0m
+[0;32m10:52:14.290 [D] ots: ots.keeplive[11] happened![0m
+[0;31m10:52:14.300 [E] executor: _changed_ack called (_changed_ack,382)[0m
+[0;32m10:52:14.310 [D] ots: ots_up_rpc_delegate_out_cb(), 348, {"id":563216413,"method":"properties_changed","params":[{"did":"624135017","siid":3,"piid":11,"value":1}]}[0m
+[0;32m10:52:14.320 [I] iot report turnPotCfg 1[0m
+[0;32m10:52:14.350 [D] ots: recvd 39Bytes[0m
+[0;32m10:52:14.350 [D] ots: req or ack recvd.[0m
+[0;32m10:52:14.350 [D] ots: {"id":108003356,"result":"ok"}.[0m
+[0;32m10:52:14.360 [D] ots: send_cnt = 20[21], ack_cnt = 19[20,0], costtime = 1830[86,86][0m
+[0;32m10:52:14.370 [D] ots: event emit[id=11,txt=ots.keeplive,ext_len=0][0m
+[0;32m10:52:14.370 [D] ots: ots.keeplive[11] happened![0m
+[0;31m10:52:14.380 [E] executor: _changed_ack called (_changed_ack,382)[0m
+[0;32m10:52:14.390 [D] ots: ots_up_rpc_delegate_out_cb(), 348, {"id":1372586014,"method":"properties_changed","params":[{"did":"624135017","siid":3,"piid":9,"value":"M0 u81eau9009 0 15 180 0"}]}[0m
+[0;32m10:52:14.410 [I] ----------------iot report sycn str M0 u81eau9009 0 15 180 0----------------
+[0m
+[0;32m10:52:14.440 [D] ots: recvd 39Bytes[0m
+[0;32m10:52:14.440 [D] ots: req or ack recvd.[0m
+[0;32m10:52:14.440 [D] ots: {"id":563216413,"result":"ok"}.[0m
+[0;32m10:52:14.440 [D] ots: send_cnt = 21[22], ack_cnt = 20[21,0], costtime = 1960[90,90][0m
+[0;32m10:52:14.450 [D] ots: event emit[id=11,txt=ots.keeplive,ext_len=0][0m
+[0;32m10:52:14.460 [D] ots: ots.keeplive[11] happened![0m
+[0;31m10:52:14.460 [E] executor: _changed_ack called (_changed_ack,382)[0m
+[0;32m10:52:14.470 [D] ots: ots_up_rpc_delegate_out_cb(), 348, {"id":192151583,"method":"event_occured","params":{"did":"624135017","siid":3,"eiid":1,"arguments":[]}}[0m
+[0;32m10:52:14.490 [I] iot report event : IOT_EVENT_COOK_START
+[0m
+[0;32m10:52:14.520 [D] ots: recvd 40Bytes[0m
+[0;32m10:52:14.520 [D] ots: req or ack recvd.[0m
+[0;32m10:52:14.520 [D] ots: {"id":1372586014,"result":"ok"}.[0m
+[0;32m10:52:14.530 [D] ots: send_cnt = 22[23], ack_cnt = 21[22,0], costtime = 2100[95,95][0m
+[0;32m10:52:14.540 [D] ots: event emit[id=11,txt=ots.keeplive,ext_len=0][0m
+[0;32m10:52:14.540 [D] ots: ots.keeplive[11] happened![0m
+[0;31m10:52:14.550 [E] executor: _changed_ack called (_changed_ack,382)[0m
+[0;32m10:52:14.560 [D] ots: ots_up_rpc_delegate_out_cb(), 348, {"id":1207304224,"method":"properties_changed","params":[{"did":"624135017","siid":3,"piid":11,"value":1}]}[0m
+[0;32m10:52:14.610 [D] ots: recvd 39Bytes[0m
+[0;32m10:52:14.610 [D] ots: req or ack recvd.[0m
+[0;32m10:52:14.610 [D] ots: {"id":192151583,"result":"ok"}.[0m
+[0;32m10:52:14.610 [D] ots: send_cnt = 23[24], ack_cnt = 22[23,0], costtime = 2240[99,99][0m
+[0;32m10:52:14.620 [D] ots: event emit[id=11,txt=ots.keeplive,ext_len=0][0m
+[0;32m10:52:14.630 [D] ots: ots.keeplive[11] happened![0m
+[0;31m10:52:14.630 [E] executor: _event_ack called (_event_ack,455)[0m
+
+[10:52:18.846]收←◆[0;32m10:52:14.860 [D] ots: recvd 40Bytes[0m
+[0;32m10:52:14.860 [D] ots: req or ack recvd.[0m
+[0;32m10:52:14.860 [D] ots: {"id":1207304224,"result":"ok"}.[0m
+[0;32m10:52:14.860 [D] ots: send_cnt = 23[24], ack_cnt = 23[24,0], costtime = 2540[119,120][0m
+[0;32m10:52:14.870 [D] ots: event emit[id=11,txt=ots.keeplive,ext_len=0][0m
+[0;32m10:52:14.880 [D] ots: ots.keeplive[11] happened![0m
+[0;31m10:52:14.880 [E] executor: _changed_ack called (_changed_ack,382)[0m
+
+[10:52:19.284]收←◆[0;32m10:52:15.290 [I] miio_monitor: work time = 15s, memory left = 57436[0m
+
+[10:52:21.143]收←◆[0;32m10:52:17.150 [I] cur msp is 1,ssp is 6,cur work sta is 2
+[0m
+[0;32m10:52:17.150 [I] wifi sta is 1,net sta is 4
+[0m
+[0;32m10:52:17.150 [I] current temp is 69,target temp is 180,target tim is 15,lef tim is 15,shakeTim is 7
+[0m
+
+[10:52:23.565]收←◆[0;32m10:52:19.580 [I] app_logic_storage_handle():sysData changed,is going to storage it to flash
+[0m
+
+[10:52:24.127]收←◆[0;32m10:52:20.140 [I] ots: -->sync sent.[0m
+[0;32m10:52:20.170 [D] ots: recvd 24Bytes[0m
+[0;32m10:52:20.170 [I] ots: <--sync ack.[0m
+[0;32m10:52:20.170 [D] ots: sync costtime = 30[0m
+
+[10:52:24.283]收←◆[0;32m10:52:20.290 [I] miio_monitor: work time = 20s, memory left = 57436[0m
+
+[10:52:26.142]收←◆[0;32m10:52:22.160 [I] cur msp is 1,ssp is 6,cur work sta is 2
+[0m
+[0;32m10:52:22.160 [I] wifi sta is 1,net sta is 4
+[0m
+[0;32m10:52:22.160 [I] current temp is 75,target temp is 180,target tim is 15,lef tim is 15,shakeTim is 7
+[0m
+
+[10:52:31.157]收←◆[0;32m10:52:27.170 [I] cur msp is 1,ssp is 6,cur work sta is 2
+[0m
+[0;32m10:52:27.170 [I] wifi sta is 1,net sta is 4
+[0m
+[0;32m10:52:27.170 [I] current temp is 81,target temp is 180,target tim is 15,lef tim is 15,shakeTim is 7
+[0m
+
+[10:52:34.282]收←◆[0;32m10:52:30.290 [I] miio_monitor: work time = 30s, memory left = 57436[0m
+
+[10:52:36.172]收←◆[0;32m10:52:32.180 [I] cur msp is 1,ssp is 6,cur work sta is 2
+[0m
+[0;32m10:52:32.180 [I] wifi sta is 1,net sta is 4
+[0m
+[0;32m10:52:32.180 [I] current temp is 87,target temp is 180,target tim is 15,lef tim is 15,shakeTim is 7
+[0m
+
+[10:52:37.875]收←◆[0;32m10:52:33.880 [D] otu: [192.168.31.171:52933] talking, len=32[0m
+[0;33m10:52:33.880 [W] otu: Token private!!. (otu_packet_handle,1388)[0m
+[0;32m10:52:33.880 [D] otu: [192.168.31.171:52933] talking, len=32[0m
+[0;33m10:52:33.890 [W] otu: Token private!!. (otu_packet_handle,1388)[0m
+[0;32m10:52:33.900 [D] otu: [192.168.31.171:52933] talking, len=160[0m
+[0;32m10:52:33.900 [D] otu: local rpc packet.[0m
+[0;32m10:52:33.910 [D] otu: {"id":1266707491,"method":"miIO.sub","params":{"version":"2.0","did":"1034531039","update_ts":1682650353,"sub_method":"."}}.[0m
+[0;32m10:52:33.920 [D] ot: miIO.sub found[0m
+[0;32m10:52:33.920 [D] otu: method: miIO.sub acm:0x2  acl:0xfd[0m
+[0;32m10:52:33.930 [D] mipub: do_miio_sub from: 192.168.31.171:52933[0m
+[0;32m10:52:33.940 [D] mipub: sub did: 1034531039[0m
+[0;32m10:52:33.940 [D] mipub: agentgw:624135017[0m
+[0;32m10:52:33.950 [D] mipub: ******MIPUB dump start******[0m
+[0;32m10:52:33.950 [D] mipub: 	 spec_prop_num:0[0m
+[0;32m10:52:33.960 [D] mipub: 	 spec_event_num:0[0m
+[0;32m10:52:33.960 [D] mipub: 	 spec_v3_prop_num:0[0m
+[0;32m10:52:33.970 [D] mipub: 	 spec_v3_event_num:0[0m
+[0;32m10:52:33.970 [D] mipub: 	 profile_prop_num:0[0m
+[0;32m10:52:33.980 [D] mipub: 	 profile_event_num:0[0m
+[0;32m10:52:33.980 [D] mipub: 	 prop_num:0[0m
+[0;32m10:52:33.990 [D] mipub: 	 event_num:0[0m
+[0;32m10:52:33.990 [D] mipub: 	 all_num:1[0m
+[0;32m10:52:33.990 [D] mipub: ******MIPUB dump detail start******[0m
+[0;32m10:52:34.000 [D] mipub: did: 1034531039	 ts: 1682650353 last_recv: 33 method_num 1 [0m
+[0;32m10:52:34.010 [D] mipub: 	(9,	agent-624135017)[0m
+[0;32m10:52:34.010 [D] mipub: ******MIPUB dump end******[0m
+[0;32m10:52:34.020 [D] ot: ot_down_rpc_delegate_ack_handle(), 510, malloc_len: 109, pload_len: 37[0m
+[0;32m10:52:34.030 [D] mipub: {"id":1266707491,"result":{"code":0}}[0m
+[0;32m10:52:34.030 [D] ot: ot_down_rpc_delegate_finish(), 423, id: 1266707491, timestamp: 0, tick: 0, pload_len: 37[0m
+[0;32m10:52:34.050 [D] otu: otu_down_rpc_delegate_ack(), 575, ack: {"id":1266707491,"result":{"code":0},"exe_time":130}, len: 52[0m
+
+[10:52:38.282]收←◆[0;32m10:52:34.290 [I] miio_monitor: work time = 34s, memory left = 57232[0m
+
+[10:52:38.875]收←◆[0;32m10:52:34.880 [I] ots: -->kplv sent.[0m
+[0;32m10:52:34.910 [D] ots: recvd 8Bytes[0m
+[0;32m10:52:34.910 [I] ots: <--kplv ack.[0m
+[0;32m10:52:34.910 [D] ots: event emit[id=11,txt=ots.keeplive,ext_len=0][0m
+[0;32m10:52:34.920 [D] ots: keeplive costtime = 40[0m
+[0;32m10:52:34.920 [D] ots: ots.keeplive[11] happened
+[10:52:38.938]收←◆![0m
+
+[10:52:40.125]收←◆[0;32m10:52:36.140 [I] ots: -->sync sent.[0m
+
+[10:52:40.172]收←◆[0;32m10:52:36.180 [D] ots: recvd 24Bytes[0m
+[0;32m10:52:36.180 [I] ots: <--sync ack.[0m
+[0;32m10:52:36.180 [D] ots: sync costtime = 40[0m
+
+[10:52:41.204]收←◆[0;32m10:52:37.210 [I] cur msp is 1,ssp is 6,cur work sta is 2
+[0m
+[0;32m10:52:37.210 [I] wifi sta is 1,net sta is 4
+[0m
+[0;32m10:52:37.210 [I] current temp is 94,target temp is 180,target tim is 15,lef tim is 15,shakeTim is 7
+[0m
+
+[10:52:44.281]收←◆[0;32m10:52:40.290 [I] miio_monitor: work time = 40s, memory left = 57232[0m
+
+[10:52:46.203]收←◆[0;32m10:52:42.220 [I] cur msp is 1,ssp is 6,cur work sta is 2
+[0m
+[0;32m10:52:42.220 [I] wifi sta is 1,net sta is 4
+[0m
+[0;32m10:52:42.220 [I] current temp is 100,target temp is 180,target tim is 15,lef tim is 15,shakeTim is 7
+[0m
+
+[10:52:51.219]收←◆[0;32m10:52:47.230 [I] cur msp is 1,ssp is 6,cur work sta is 2
+[0m
+[0;32m10:52:47.230 [I] wifi sta is 1,net sta is 4
+[0m
+[0;32m10:52:47.230 [I] current temp is 107,target temp is 180,target tim is 15,lef tim is 15,shakeTim is 7
+[0m
+
+[10:52:54.281]收←◆[0;32m10:52:50.290 [I] miio_monitor: work time = 50s, memory left = 57232[0m
+
+[10:52:54.453]收←◆[0;32m10:52:50.460 [D] otu: [192.168.31.171:52933] talking, len=32[0m
+[0;33m10:52:50.470 [W] otu: Token private!!. (otu_packet_handle,1388)[0m
+[0;32m10:52:50.470 [D] mipub: mipub probe...[0m
+
+[10:52:56.234]收←◆[0;32m10:52:52.240 [I] cur msp is 1,ssp is 6,cur work sta is 2
+[0m
+[0;32m10:52:52.240 [I] wifi sta is 1,net sta is 4
+[0m
+[0;32m10:52:52.240 [I] current temp is 114,target temp is 180,target tim is 15,lef tim is 15,shakeTim is 7
+[0m
+
+[10:52:58.921]收←◆[0;32m10:52:54.930 [I] ots: -->kplv sent.[0m
+[0;32m10:52:54.960 [D] ots: recvd 8Bytes[0m
+[0;32m10:52:54.960 [I] ots: <--kplv ack.[0m
+[0;32m10:52:54.960 [D] ots: event emit[id=11,txt=ots.keeplive,ext_len=0][0m
+[0;32m10:52:54.970 [D] ots: ots.keeplive[11] happened![0m
+[0;32m10:52:54.970 [D] ots: keeplive costtime = 40[0m
+
+[10:53:01.233]收←◆[0;32m10:52:57.250 [I] cur msp is 1,ssp is 6,cur work sta is 2
+[0m
+[0;32m10:52:57.250 [I] wifi sta is 1,net sta is 4
+[0m
+[0;32m10:52:57.250 [I] current temp is 119,target temp is 180,target tim is 15,lef tim is 15,shakeTim is 7
+[0m
+
+[10:53:04.280]收←◆[0;32m10:53:00.290 [I] miio_monitor: work time = 60s, memory left = 57232[0m
+
+[10:53:05.014]收←◆[0;32m10:53:01.030 [I] mible_rpc: mible_rpc_statistic = {"id":1031405647,"method":"_async.stat","params":{"stat":{"title":"pr_init","content":"fail,ret:-1"}}}[0m
+[0;32m10:53:01.030 [D] ots: ots_up_rpc_delegate_out_cb(), 348, {"id":1031405647,"method":"_async.stat","params":{"stat":{"title":"pr_init","content":"fail,ret:-1"}}}[0m
+[0;32m10:53:01.080 [D] ots: recvd 40Bytes[0m
+[0;32m10:53:01.080 [D] ots: req or ack recvd.[0m
+[0;32m10:53:01.080 [D] ots: {"id":1031405647,"result":"ok"}.[0m
+[0;32m10:53:01.090 [D] ots: send_cnt = 24[25], ack_cnt = 24[25,0], costtime = 2600[113,112][0m
+[0;32m10:53:01.090 [D] ots: event emit[id=11,txt=ots.keeplive,ext_len=0][0m
+[0;32m10:53:01.100 [D] ots: ots.keeplive[11] happened![0m
+
+[10:53:05.280]收←◆[0;32m10:53:01.290 [I] miio_monitor: work time = 61s, memory left = 57228[0m
+
+[10:53:06.248]收←◆[0;32m10:53:02.260 [I] cur msp is 1,ssp is 6,cur work sta is 2
+[0m
+[0;32m10:53:02.260 [I] wifi sta is 1,net sta is 4
+[0m
+[0;32m10:53:02.260 [I] current temp is 125,target temp is 180,target tim is 15,lef tim is 15,shakeTim is 7
+[0m
+
+[10:53:10.952]收←◆[0;32m10:53:06.970 [D] mipub: ***********PUB SPEC-PROP:did=624135017,siid=2,piid=5, send to peer:192.168.31.171[0m
+***ERROR*** A stack overflow in task iot_report_task has been detected.
+abort() was called at PC 0x4008f4e8 on core 0
+
+ELF file SHA256: 355a84cfc7893c0d
+
+Backtrace: 0x4008f0fd:0x3ffec8c0 0x4008f4d1:0x3ffec8e0 0x4008f4e8:0x3ffec900 0x40093314:0x3ffec920 0x40092290:0x3ffec940 0x40092246:0x00000000 |<-CORRUPTED
+
+[0;32mI (14150) esp_core_dump_flash: Save core dump to flash...[0m
+
+ELF file SHA256: 355a84cfc7893c0d
+
+Backtrace: 0x40093dac:0x3ffec380 0x400925dd:0x3ffec3a0 0x40093d34:0x3ffec3d0 0x40090f31:0x3ffec400 0x400907ed:0x3ffec420 0x40090a35:0x3ffec760 0x40090ee8:0x3ffec780 0x4008f433:0x3ffec7c0 0x4008f799:0x3ffec7e0 0x400855de:0x3ffec800 0x4008f0fd:0x3ffec8c0 0x4008f4d1:0x3ffec8e0 0x4008f4e8:0x3ffec900 0x40093314:0x3ffec920 0x40092290:0x3ffec940 0x40092246:0x00000000 |<-CORRUPTED
+
+Re-entered core dump! Exception happened during core dump!
+Rebooting...
+[0;32mI (13) boot: ESP-IDF v4.0.3-18-g70e151b696-dirty 2nd stage bootloader[0m
+[0;32mI (13) boot: compile time 09:45:04[0m
+[0;32mI (13) boot: Enabling RNG early entropy source...[0m
+[0;32mI (19) boot: SPI Flash RID  : 0x1C7016[0m
+[0;32mI (23) boot: SPI Flash  MF  : 0x1C[0m
+[0;32mI (27) boot: SPI Flash  ID  : 0x7016[0m
+[0;32mI (31) boot: SPI Speed      : 40MHz[0m
+[0;32mI (36) boot: SPI Mode       : DIO[0m
+[0;32mI (40) boot: SPI Flash Size : 4MB[0m
+[0;32mI (44) boot: Partition Table:[0m
+[0;32mI (47) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (54) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (62) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (69) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (77) boot:  3 miio_fw1         OTA app          00 10 00010000 001e0000[0m
+[0;32mI (84) boot:  4 miio_fw2         OTA app          00 11 001f0000 001e0000[0m
+[0;32mI (92) boot:  5 test             test app         00 20 003d0000 00013000[0m
+[0;32mI (99) boot:  6 mimcu            Unknown data     01 fd 003e4000 00004000[0m
+[0;32mI (107) boot:  7 coredump         Unknown data     01 03 003e8000 00010000[0m
+[0;32mI (114) boot:  8 minvs            Unknown data     01 fe 003f8000 00000400[0m
+[0;32mI (122) boot: End of partition table[0m
+[0;32mI (126) boot_comm: chip revision: 1, min. application chip revision: 0[0m
+[0;32mI (133) esp_image: segment 0: paddr=0x00010020 vaddr=0x3f400020 size=0x351d8 (217560) map[0m
+
+[10:53:11.264]收←◆[0;32mI (219) esp_image: segment 1: paddr=0x00045200 vaddr=0x3ffbdb60 size=0x040dc ( 16604) load[0m
+[0;32mI (226) esp_image: segment 2: paddr=0x000492e4 vaddr=0x3ffc1c3c size=0x00744 (  1860) load[0m
+[0;32mI (227) esp_image: segment 3: paddr=0x00049a30 vaddr=0x40080000 size=0x00400 (  1024) load[0m
+[0;32mI (236) esp_image: segment 4: paddr=0x00049e38 vaddr=0x40080400 size=0x061d8 ( 25048) load[0m
+[0;32mI (254) esp_image: segment 5: paddr=0x00050018 vaddr=0x400d0018 size=0x10d1b0 (1102256) map[0m
+
+[10:53:11.687]收←◆[0;32mI (645) esp_image: segment 6: paddr=0x0015d1d0 vaddr=0x400865d8 size=0x17c4c ( 97356) load[0m
+
+[10:53:11.749]收←◆[0;32mI (705) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (705) boot: Disabling RNG early entropy source...[0m
+[0;32mI (705) cpu_start: Pro cpu up.[0m
+[0;32mI (709) cpu_start: Application information:[0m
+[0;32mI (714) cpu_start: Project name:     miio_app[0m
+[0;32mI (719) cpu_start: App version:      1[0m
+[0;32mI (723) cpu_start: Compile time:     Feb  4 2023 09:45:07[0m
+[0;32mI (729) cpu_start: ELF file SHA256:  355a84cfc7893c0d...[0m
+[0;32mI (735) cpu_start: ESP-IDF:          v4.0.3-18-g70e151b696-dirty[0m
+[0;32mI (742) cpu_start: Single core mode[0m
+[0;32mI (746) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (753) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (759) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (765) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (772) heap_init: At 3FFBDB5C len 00000004 (0 KiB): DRAM[0m
+[0;32mI (778) heap_init: At 3FFCEDF0 len 00011210 (68 KiB): DRAM[0m
+[0;32mI (784) heap_init: At 3FFE0440 len 0001FBC0 (126 KiB): D/IRAM[0m
+[0;32mI (790) heap_init: At 40078000 len 00008000 (32 KiB): IRAM[0m
+[0;32mI (796) heap_init: At 4009E224 len 00001DDC (7 KiB): IRAM[0m
+[0;32mI (802) cpu_start: Pro cpu start user code[0m
+[0;32mI (820) esp_core_dump_flash: Init core dump to flash[0m
+[0;32mI (821) esp_core_dump_flash: Found partition 'coredump' @ 3e8000 65536 bytes[0m
+[0;31mE (828) esp_core_dump_common: Core dump data CRC check failed: 0xffffffff -> 0x53da1a71![0m
+[0;32mI (832) cpu_start: Starting scheduler on PRO CPU.[0m
+[0;32m08:00:00.010 [D] Addon: init complete[0m
+[0;32m08:00:00.010 [D] httpc: idle[0m
+[0;32m08:00:00.010 [D] otu: otu is idle...[0m
+[0;32m08:00:00.010 [D] ots: ots is idle...[0m
+[0;32m08:00:00.020 [I] miio_ot: httpdns enabled[0m
+[0;32m08:00:00.020 [I] arch: arch_set_wifi_switch_init_state called[0m
+[0;32m08:00:00.030 [I] mible_gateway: has reboot 0, reboot_times 0[0m
+[0;32mI (906) BTDM_INIT: BT controller compile version [ecc3fcf][0m
+[0;32mI (916) system_api: Base MAC address is not set, read default base MAC address from BLK0 of EFUSE[0m
+[0;32mI (926) phy_init: phy_version 4660,0162888,Dec 23 2020[0m
+
+[10:53:12.296]收←◆[0;32m08:00:00.410 [I] mible_gateway: Init GAP, GATTS and GATTC[0m
+[0;32m08:00:00.410 [I] mible_gap: create scan_delay timer OK[0m
+[0;32m08:00:00.420 [I] miio_wifi: cc=CN, schan=1, nchan=13, max_tx_dbm=0[0m
+I (1306) wifi:wifi driver task: 3ffdf984, prio:23, stack:6656, core=0
+[0;32mI (1306) system_api: Base MAC address is not set, read default base MAC address from BLK0 of EFUSE[0m
+[0;32mI (1306) system_api: Base MAC address is not set, read default base MAC address from BLK0 of EFUSE[0m
+I (1326) wifi:wifi firmware version: ee7163f-dirty
+I (1326) wifi:config NVS flash: enabled
+I (1326) wifi:config nano formating: disabled
+I (1336) wifi:Init data frame dynamic rx buffer num: 20
+I (1336) wifi:Init management frame dynamic rx buffer num: 20
+I (1346) wifi:Init management short buffer num: 32
+I (1346) wifi:Init dynamic tx buffer num: 20
+I (1346) wifi:Init static rx buffer size: 1600
+I (1356) wifi:Init static rx buffer num: 10
+I (1356) wifi:Init dynamic rx buffer num: 20
+[0;32mI (1366) wifi_init: rx ba win: 6[0m
+[0;32mI (1366) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1366) wifi_init: udp mbox: 6[0m
+[0;32mI (1376) wifi_init: tcp mbox: 6[0m
+[0;32mI (1376) wifi_init: tcp tx win: 5744[0m
+[0;32mI (1386) wifi_init: tcp rx win: 5744[0m
+[0;32mI (1386) wifi_init: tcp mss: 1436[0m
+[0;32mI (1386) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1396) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32m08:00:00.530 [D] ot: event emit[id=3,txt=otn.prov,ext_len=1][0m
+[0;32m08:00:00.530 [D] miio_ot: otn.prov[3] happened![0m
+[0;32m08:00:00.540 [D] otu: probe disabled.[0m
+I (1416) wifi:set country: cc=CN\0 schan=1 nchan=13 policy=1
+
+[0;32m08:00:00.550 [I] miio_net: Wifi event[3][0m
+[0;32m08:00:00.550 [I] miio_net: Wifi station stoped[0m
+I (1436) wifi:Set ps type: 2
+
+
+
+_|      _|  _|_|_|  _|_|_|    _|_|  
+_|_|  _|_|    _|      _|    _|    _|
+_|  _|  _|    _|      _|    _|    _|
+_|      _|    _|      _|    _|    _|
+_|      _|  _|_|_|  _|_|_|    _|_|  
+JENKINS BUILD NUMBER: N/A
+BUILD TIME: Feb  4 2023,09:46:17
+BUILT BY: N/A
+MIIO APP VER: 2.2.4_0024
+MIIO MCU VER: 
+MIIO DID: 624135017
+MIIO NEW DID: 70014626937
+MIIO WIFI MAC: dced83690796
+MIIO MODEL: careli.fryer.maf06a
+ARCH TYPE: esp32,0x0000a601
+ARCH VER: v4.0.3-18-g70e151b696-dirty
+FLASH INFO: manufacturer(0x1c), memory type(0x70), capacity(0x16)
+[0;32mI (1486) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32m08:00:00.620 [I] Enter smart_pot_init() init.[0m
+[0;32m08:00:00.620 [I] device_uart_int():enter[0m
+[0;32mI (1506) uart: queue free spaces: 20[0m
+[0;32mI (1506) gpio: GPIO[27]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32m08:00:00.640 [I] task_work_handle -> work_handle_init()
+[0m
+[0;32mI (1526) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1536) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32m08:00:00.670 [I] enter task-> sensor_dectect
+[0m
+[0;32m08:00:00.670 [I] enter task-> err_handle
+[0m
+[0;32m08:00:00.680 [I] buzzer_task : enter buzzer_loop()
+[0m
+[0;32m08:00:00.680 [I] app_logic_init : init
+[0m
+[0;32m08:00:00.690 [I] Enter wifi_init()[0m
+[0;32m08:00:00.690 [I] wifi_enable() -> WiFi enable!!!
+
+[0m
+[0;32m08:00:00.700 [I] wifi_set_work_sta(),set work sta 1
+[0m
+[0;33m08:00:00.700 [W] miio_net: set wifi switch on (miio_net_set_wifi_switch_state,392)[0m
+[0;32m08:00:00.710 [I] set ssp 2
+[0m
+[0;32m08:00:00.710 [I] set msp 0
+[0m
+[0;32m08:00:00.720 [I] app_logic_recover_storage() : recover user data failed,is going to init it
+[0m
+[0;32m08:00:00.730 [I] app_logic_recover_storage() : recover sycn failed 1,is going to init it
+[0m
+[0;32m08:00:00.740 [I] app_logic_set_sycn_orign_str():set sycn orign str M0 u81eau9009 0 15 180 0,len is 24
+[0m
+[0;32m08:00:00.750 [I] iot_update_recipe_sycn():len is 24 ,get sycn str :
+ M0 u81eau9009 0 15 180 0
+[0m
+[0;32m08:00:00.760 [I] enter cloud
+[0m
+[0;32m08:00:00.760 [I] get cloud,index is 1 cid is M0
+[0m
+[0;32m08:00:00.770 [I] get cloud name len is 4:[0m
+[0;32m08:00:00.770 [I] get preheatflg is 0
+[0m
+[0;32m08:00:00.770 [I] get targtime 15
+[0m
+[0;32m08:00:00.780 [I] get targTemp 180,fireLev 180
+[0m
+[0;32m08:00:00.780 [I] get capacity 0
+
+[0m
+[0;32m08:00:00.790 [I] iot_update_recipe_sycn():frame check ok
+[0m
+[0;32m08:00:00.790 [I] app_logic_set_sycn_orign_str():set sycn orign str M0 u81eau9009 0 15 180 0,len is 24
+[0m
+[0;32m08:00:00.800 [I] store cloud recipe 0
+[0m
+[0;32m08:00:00.810 [I] ------app_logic_recv_sreset_reason():boot reason is 4------
+[0m
+[0;32m08:00:00.820 [I] app_logic_recv_sreset_reason():recover user reason success,reason is 2
+[0m
+[0;32m08:00:00.830 [I] task_app_logic : enter app_logic_loop()
+[0m
+[0;32m08:00:00.830 [I] buzzer task : recv msg,opt is 1,times is 1,interval is 0
+[0m
+[0;32m08:00:00.840 [I] disp_task : enter disp_loop()
+[0m
+[0;32m08:00:00.850 [I] device_pwm_out():set 0 duty = 2457
+[0m
+[0;32m08:00:00.850 [I] iot_report_loop():enter iot report task[0m
+
+[10:53:13.452]收←◆[0;32m08:00:01.560 [I] miio_monitor: work time = 1s, memory left = 79276[0m
+[0;32m08:00:01.560 [D] ot: event emit[id=3,txt=otn.prov,ext_len=1][0m
+[0;32m08:00:01.560 [D] miio_ot: otn.prov[3] happened![0m
+[0;32m08:00:01.560 [D] otu: probe disabled.[0m
+I (2446) wifi:set country: cc=CN\0 schan=1 nchan=13 policy=1
+
+[0;32m08:00:01.570 [I] miio_net: Wifi event[3][0m
+I (2456) wifi:Set ps type: 2
+
+[0;32mI (2456) phy_init: phy_version 4660,0162888,Dec 23 2020[0m
+I (2466) wifi:mode : sta (dc:ed:83:69:07:96)
+[0;32m08:00:01.590 [I] miio_net: Wifi event[2][0m
+[0;32m08:00:01.600 [I] miio_net: Wifi STA start[0m
+[0;33m08:00:01.600 [W] mible_net: net_switch_on:mible_gap_scan (net_switch_on,196)[0m
+[0;32m08:00:01.610 [I] miio_net: Wifi station stoped[0m
+[0;32m08:00:01.610 [I] miio_net: Wifi station started[0m
+[0;32m08:00:01.620 [I] mible_gap: start mible gap scan in 6000ms[0m
+[0;33m08:00:01.620 [W] mible_net: net_switch_on:mible_beacon_start (net_switch_on,199)[0m
+[0;32m08:00:01.630 [I] miio_net: clear ap-info list when starting scan[0m
+
+[10:53:13.655]收←◆[0;32m08:00:01.760 [I] miio_net: Wifi event[1][0m
+[0;32m08:00:01.760 [I] miio_net: Wifi scan done, status: 1[0m
+
+[10:53:13.717]收←◆[0;32m08:00:01.830 [I] power_turn_on_handle():recver msp is 1
+[0m
+[0;32m08:00:01.830 [I] set ssp 4
+[0m
+[0;32m08:00:01.830 [I] set msp 1
+[0m
+[0;32m08:00:01.830 [I] general_recipe_init():enter
+[0m
+[0;32m08:00:01.830 [I] cur mode is 1,get temp is 180,get tim is 15,get cid is M0
+[0m
+[0;32m08:00:01.850 [I] OPT_GO_BACK work_handle_set_sta_stop
+[0m
+[0;32m08:00:01.860 [I] disp_draw_adj_temp_val():IS going to dram num 180[0m
+
+[10:53:13.780]收←◆[0;32m08:00:01.880 [I] miio_net: Wifi event[1][0m
+[0;32m08:00:01.890 [I] miio_net: Wifi scan done, status: 1[0m
+
+[10:53:13.889]收←◆[0;32m08:00:02.010 [I] miio_net: Wifi event[1][0m
+[0;32m08:00:02.010 [I] miio_net: Wifi scan done, status: 1[0m
+
+[10:53:14.014]收←◆[0;32m08:00:02.130 [I] miio_net: Wifi event[1][0m
+[0;32m08:00:02.130 [I] miio_net: Wifi scan done, status: 1[0m
+
+[10:53:14.139]收←◆[0;32m08:00:02.250 [I] miio_net: Wifi event[1][0m
+[0;32m08:00:02.250 [I] miio_net: Wifi scan done, status: 1[0m
+
+[10:53:14.264]收←◆[0;32m08:00:02.380 [I] miio_net: Wifi event[1][0m
+[0;32m08:00:02.380 [I] miio_net: Wifi scan done, status: 1[0m
+
+[10:53:14.389]收←◆[0;32m08:00:02.500 [I] miio_net: Wifi event[1][0m
+[0;32m08:00:02.500 [I] miio_net: Wifi scan done, status: 1[0m
+
+[10:53:14.514]收←◆[0;32m08:00:02.630 [I] miio_net: Wifi event[1][0m
+[0;32m08:00:02.630 [I] miio_net: Wifi scan done, status: 1[0m
+[0;32m08:00:02.630 [I] miio_monitor: work time = 2s, memory left = 75844[0m
+
+[10:53:14.639]收←◆[0;32m08:00:02.750 [I] miio_net: Wifi event[1][0m
+[0;32m08:00:02.750 [I] miio_net: Wifi scan done, status: 1[0m
+
+[10:53:14.764]收←◆[0;32m08:00:02.870 [I] miio_net: Wifi event[1][0m
+[0;32m08:00:02.870 [I] miio_net: Wifi scan done, status: 1[0m
+
+[10:53:14.889]收←◆[0;32m08:00:03.000 [I] miio_net: Wifi event[1][0m
+[0;32m08:00:03.000 [I] miio_net: Wifi scan done, status: 1[0m
+
+[10:53:15.014]收←◆[0;32m08:00:03.120 [I] miio_net: Wifi event[1][0m
+[0;32m08:00:03.120 [I] miio_net: Wifi scan done, status: 1[0m
+
+[10:53:15.139]收←◆[0;32m08:00:03.240 [I] miio_net: Wifi event[1][0m
+[0;32m08:00:03.250 [I] miio_net: Wifi scan done, status: 1[0m
+
+[10:53:15.264]收←◆[0;32m08:00:03.370 [I] miio_net: Wifi event[1][0m
+[0;32m08:00:03.370 [I] miio_net: Wifi scan done, status: 1[0m
+
+[10:53:15.389]收←◆[0;32m08:00:03.490 [I] miio_net: Wifi event[1][0m
+[0;32m08:00:03.490 [I] miio_net: Wifi scan done, status: 1[0m
+
+[10:53:15.499]收←◆[0;32m08:00:03.620 [I] miio_net: Wifi event[1][0m
+[0;32m08:00:03.620 [I] miio_net: Wifi scan done, status: 1[0m
+
+[10:53:15.623]收←◆[0;32m08:00:03.740 [I] miio_net: Wifi event[1][0m
+[0;32m08:00:03.740 [I] miio_net: Wifi scan done, status: 1[0m
+
+[10:53:15.748]收←◆[0;32m08:00:03.860 [I] miio_net: Wifi event[1][0m [0;32m08:00:03.870 [I] miio_net: Wifi scan done, status: 1[0m
